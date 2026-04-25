@@ -15,3 +15,7 @@ A real-time driver drowsiness detection system using Python, OpenCV, and facial 
 - NumPy
 
 ## 📂 Project Structure
+app.py - Main application
+detector.py - Drowsiness detection logic
+templates/ - HTML files
+static/ - CSS/JS files
