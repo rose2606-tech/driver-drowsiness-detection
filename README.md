@@ -20,3 +20,11 @@ app.py - Main application
 detector.py - Drowsiness detection logic  
 templates/ - HTML files  
 static/ - CSS/JS files  
+
+## ⚙️ How to Run
+
+1. Install dependencies:
+pip install -r requirements.txt
+
+2. Run the project:
+python app.py
