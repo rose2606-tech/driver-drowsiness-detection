@@ -40,7 +40,7 @@ http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
 
 Extract it and place it in the project folder before running the project.
 
-### Create Virtual Environment (Recommended)
+### Create Virtual Environment 
 
 ```bash
 python -m venv venv
