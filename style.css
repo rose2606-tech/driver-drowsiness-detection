@@ -1,0 +1,131 @@
+/* ==== Global Light Theme ==== */
+body.light-theme {
+  background: linear-gradient(135deg, #f8faff, #eaf3ff);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== Center Container ==== */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* ==== Card Box ==== */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  text-align: center;
+  width: 350px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ==== Headings ==== */
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #2b5ce5;
+}
+
+.subtitle {
+  margin-bottom: 25px;
+  color: #555;
+  font-size: 0.95em;
+}
+
+/* ==== Inputs ==== */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.95em;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #2b5ce5;
+  box-shadow: 0 0 5px rgba(43, 92, 229, 0.3);
+}
+
+/* ==== Buttons ==== */
+button {
+  background: #2b5ce5;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background: #1f46b5;
+  transform: scale(1.03);
+}
+
+/* ==== Switch Text ==== */
+.switch {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.switch a {
+  color: #2b5ce5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Dashboard ==== */
+.dashboard {
+  text-align: center;
+  padding: 40px;
+}
+
+.dashboard h1 {
+  color: #2b5ce5;
+}
+
+.dashboard video,
+.dashboard img {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logout-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background: #d32f2f;
+}

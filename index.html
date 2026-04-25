@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driver Drowsiness Detection - Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="light-theme">
+
+  <div class="container">
+    <div class="card">
+      <h2>Driver Drowsiness Detection</h2>
+      <p class="subtitle">Stay alert, drive safe 🚗💤</p>
+
+      <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="Enter Username" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <button type="submit">Login</button>
+      </form>
+
+      <p class="switch">Don’t have an account? 
+        <a href="#" id="toggle-signup">Sign Up</a>
+      </p>
+
+    <form id="signup-form" action="/signup" method="POST" style="display:none;">
+
+        <input type="text" name="username" placeholder="Create Username" required>
+        <input type="password" name="password" placeholder="Create Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    
+  document.getElementById('toggle-signup').addEventListener('click', function() {
+    const signupForm = document.getElementById('signup-form');
+    const loginForm = document.querySelector('form[action="/login"]');
+    
+    if (signupForm.style.display === 'none') {
+      signupForm.style.display = 'block';
+      loginForm.style.display = 'none';
+    } else {
+      signupForm.style.display = 'none';
+      loginForm.style.display = 'block';
+    }
+  });
+</script>
+
+ 
+
+</body>
+</html>
+
+

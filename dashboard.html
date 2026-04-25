@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driver Drowsiness Detection - Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .dashboard {
+      text-align: center;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 60%;
+    }
+    h2 {
+      color: #333;
+    }
+    #videoStream {
+      border-radius: 10px;
+      border: 2px solid #4CAF50;
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      margin-top: 20px;
+    }
+    .logout {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #e63946;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .logout:hover {
+      background: #c82333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard">
+    <h2>Welcome, {{ user }} 👋</h2>
+    <p>Live Driver Monitoring Feed:</p>
+
+    <!-- ✅ Corrected video feed URL -->
+    <img src="{{ url_for('video') }}" alt="Video Stream" id="videoStream">
+
+    <br>
+    <a href="{{ url_for('logout') }}" class="logout">Logout</a>
+  </div>
+
+</body>
+</html>
+
