@@ -41,9 +41,12 @@ http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
 Extract it and place it in the project folder before running the project.
 
 ### Create Virtual Environment (Recommended)
+
+```bash
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
+```
 
 
 ## 👩‍💻 Author
